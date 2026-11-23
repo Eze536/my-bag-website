@@ -70,6 +70,58 @@ header .fa-bars{
     display: none;
 }
 
+/* About Section */
+
+.about-section {
+    padding: 5rem 9%;
+    background: #fff;
+}
+
+.about-section .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    min-width: 0;
+    
+    text-align: left;
+    flex: 1;
+}
+
+.about-content h3 {
+    font-size: 2.2rem;
+    color: #333;
+    margin: 2rem 0 1rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    color: #000000;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-video{
+    flex: 1;
+    min-width: 0;
+}
+
+.about-video video{
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    flex-direction: row;
+    
+}
 
 @media (max-width:991px){
     html{
@@ -129,8 +181,22 @@ section{
     
     font-size: 1.7rem;
 }
+.about-video{
+    width: 100%;
+}
+.about-video video{
+    height: 100%;
+}
+.about-container{
+    flex-direction: column;
+}
+.about-video,.about-content{
+    width: 100%;
+}
 
 }
+
+
 @media (max-width:450px){
     html{
     font-size: 50%;
